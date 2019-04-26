@@ -81,3 +81,7 @@ Si hay algo en rojo que indica que todavia no se agregó para commitear:
 * **git add nombreDelArchivo** --> (Agregar el archivo para commitear)
 * **git commit** --> (Commitear los archivos agregados)
 * **git merge master** --> (Actualizas el nuevo branch con lo que se actualizó en tu master en el punto 3 anterior)
+
+
+[Ver el nombre del branch actual en la terminal](https://www.leaseweb.com/labs/2013/08)
+[Ver el nombre del branch actual en la terminal - 2 ](https://www.shellhacks.com/show-git-branch-terminal-command-prompt/)
