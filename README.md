@@ -34,10 +34,10 @@ git config --global user.name "NombreDeUsuarioDeGitHub"
 ```
 #### Si es un proyecto propio:
 * Ir a Github -> New
-* Ponerle un nombre al repo e crearlo sin un archivo README.md
+* Ponerle un nombre al repo y crearlo sin un archivo README.md
 * Luego tirar estos comandos en consola:
 ```
- echo "# ComandosUtiles" >> README.md
+echo "# ComandosUtiles" >> README.md
 
 git init
 
@@ -45,8 +45,39 @@ git add README.md
 
 git commit -m "first commit"
 
- git remote add origin git@github.com:nombreDeUsuarioDeGithub/nombreDelRepoQueCrearon.git
+git remote add origin git@github.com:nombreDeUsuarioDeGithub/nombreDelRepoQueCrearon.git
 
 git push -u origin master
-
 ```
+
+---
+
+## Pasos utiles para el dia del examen:
+
+
+* **git checkout master** --> (Te situas en tu branch master)
+
+* **git pull upstream master** --> (Traes todos los archivos actualizados del repositorio externo)
+
+* **git push origin master** --> (Envias todos esos archivos actualizados a tu branch master)
+
+### **Si todavia no tenes un branch para trabajar:**
+
+* **git branch nombreDelNuevoBranch** --> (Creas el nuevo branch)
+* **git checkout nombreDelNuevoBranch** --> (Te situas en el nuevo branch)
+* **git merge master** --> (Actualizas el nuevo branch con lo que se actualizó en tu master en el punto 3 anterior)
+
+### **Si ya tenes un branch donde trabajaste:**
+
+* **git status** --> (Para ver si falta algo por commitear)
+
+Si no hay nada para commitear:
+
+* **git checkout nombreDelNuevoBranch** --> (Te situas en el nuevo branch)
+* **git merge master** --> (Actualizas el nuevo branch con lo que se actualizó en tu master en el punto 3 anterior)
+
+Si hay algo en rojo que indica que todavia no se agregó para commitear:
+
+* **git add nombreDelArchivo** --> (Agregar el archivo para commitear)
+* **git commit** --> (Commitear los archivos agregados)
+* **git merge master** --> (Actualizas el nuevo branch con lo que se actualizó en tu master en el punto 3 anterior)
