@@ -89,9 +89,19 @@ Si hay algo en rojo que indica que todavia no se agregó para commitear:
 
 ## RABBITMQ EN DOCKER
 
-Instalar Docker y su Interfaz Grafica
+Instalar rabbitMQ y su Interfaz Grafica
 ```
 docker run -d --hostname my-rabbit --name RabbitMQ -p 8080:15672 -p 5672:5672 rabbitmq:3-management
 ```
 
+Video de como empezar a producir mensajes y consumirlos
+
 https://www.youtube.com/watch?v=R8pMwciZ95U&t
+
+## ELASTIC SEARCH & KIBANA
+
+Instalar elastic search y kibana
+
+```
+https://hub.docker.com/r/nshou/elasticsearch-kibana
+```
