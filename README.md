@@ -85,3 +85,13 @@ Si hay algo en rojo que indica que todavia no se agregó para commitear:
 
 [Ver el nombre del branch actual en la terminal](https://www.leaseweb.com/labs/2013/08)
 [Ver el nombre del branch actual en la terminal - 2 ](https://www.shellhacks.com/show-git-branch-terminal-command-prompt/)
+
+
+## RABBITMQ EN DOCKER
+
+Instalar Docker y su Interfaz Grafica
+```
+docker run -d --hostname my-rabbit --name RabbitMQ -p 8080:15672 -p 5672:5672 rabbitmq:3-management
+```
+
+https://www.youtube.com/watch?v=R8pMwciZ95U&t
